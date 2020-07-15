@@ -1,0 +1,32 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  /* margin-bottom: 30px; */
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.header .header__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header .header__icon {
+  font-size: 20px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.header .header__header-column {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__back-btn {
+  font-size: 22px;
+  margin-right: 20px;
+}

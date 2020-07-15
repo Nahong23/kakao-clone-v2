@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Find | Kakao Clone</title>
     <script
       src="https://kit.fontawesome.com/c1c5bfb014.js"
@@ -10,16 +11,18 @@
     ></script>
   </head>
   <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
-      </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+    <div class="status-bar__fixed">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
     </div>
     <header class="header">
@@ -66,17 +69,24 @@
         <h5 class="find__tilte">Recommended Friends</h5>
         <li class="find__friend find-friend"></li>
         <li class="find__friend friend--lg">
-          <div class="friend__column">
-            <img src="images/siba.jpg" class="g-avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Hunuck
-              </span>
-              <div class="friend__column">
-                <div class="friend__add-btn">
-                  <i class="fas fa-user-plus"></i>
-
-                </div>
+          <div class="friend" id="find-friendwrap">
+            <div class="friend__wrap">
+              <img
+                src="images/Bravo.jpg"
+                class="friend__avatar"
+                id="find_recomemnd"
+              />
+              <div class="friend__content">
+                <span class="friend__name">
+                  duckduck
+                </span>
+              </div>
+            </div>
+            <div class="friend__column">
+              <div class="friend__add-btn">
+                <i class="fas fa-user-plus" id="friend__add-btn"></i>
+              </div>
+            </div>
           </div>
         </li>
       </ul>
@@ -105,5 +115,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">Please make your screen small!</span>
+    </div>
   </body>
 </html>
